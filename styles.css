@@ -38,6 +38,7 @@ html {
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 .header {
   display: flex;
@@ -86,4 +87,23 @@ html {
   padding: 16px;
   padding-right: unset;
   cursor: pointer;
+}
+.todos {
+  display: flex;
+  flex-direction: column;
+}
+.todo {
+  position: relative;
+  flex: 1 0 auto;
+  text-align: center;
+  min-height: 34px;
+  margin: 16px 0 0;
+  font-family: "Homemade Apple", sans-serif;
+  font-size: 24px;
+  border-bottom: 1px solid var(--main-color-red);
+}
+.text-todo {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
 }
